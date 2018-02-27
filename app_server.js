@@ -2,8 +2,8 @@
 var express = require('express');
 
 var app = express();
-var client_id = 'dKOtBRuD3Lq5XXkoQS07';
-var client_secret = 'Utv6o9mrTL';
+var client_id = '{YOUR_CLIENT_ID}';
+var client_secret = '{YOUR_SECRET_KEY}';
 var query = "현재 금 시세는 얼마인가요?";
 
 /* WolframAplha Simple Test start [ --- */
@@ -11,7 +11,7 @@ app.get('/simpleWolf', function (req, res) {
     
   var resultStr;
   // WolframAlpha Call API
-  var wolfram = require('wolfram').createClient("RUK6JE-56KU9Q7EX4");
+  var wolfram = require('wolfram').createClient("{YOUR_WOLFRAMALPHA_ID}");
 
   wolfram.query("What is the current price of gold", function(err, result) {
       if(err) throw err
