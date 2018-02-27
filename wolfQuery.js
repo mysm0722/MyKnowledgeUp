@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 // WolframAlpha API Call
-var wolfram = require('wolfram').createClient("RUK6JE-56KU9Q7EX4");
+var wolfram = require('wolfram').createClient("{YOUR_WOLFRAMALPHA_ID}");
 
 module.exports = {
     queryWolframAlpha: function(queryStr,callback) {
