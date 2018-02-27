@@ -2,8 +2,8 @@
 var express = require('express');
 var app = express();
 // PapagoNMT API Cliend_Id & Secret Key
-var client_id = 'dKOtBRuD3Lq5XXkoQS07';
-var client_secret = 'Utv6o9mrTL';
+var client_id = '{YOUR_CLIENT_ID}';
+var client_secret = '{YOUR_SECRET_KEY}';
 
 var query;
 var resultStr;
